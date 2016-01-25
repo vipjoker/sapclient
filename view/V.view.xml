@@ -1,0 +1,57 @@
+<mvc:View
+	controllerName="controller.C"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:m="sap.m">
+	<m:Shell name="Users"
+			height="100%">
+		<m:List
+			growing="true"
+			growingThreshold="10"
+			enableBusyIndicator="true"
+			noDataText="No users availiable"
+			items="{/data}">
+				<m:headerToolbar>
+						<m:Toolbar>
+							<m:Title text="Users" level="H2"/>
+							<m:SearchField liveChange="onSearch"
+										   width="80%"/>
+
+
+						</m:Toolbar>
+
+
+				</m:headerToolbar>
+
+
+
+			<m:CustomListItem>
+				<m:HBox>
+
+					<m:Panel class="sapUITinyMargin">
+					<m:Image src="http://www.f1cd.ru/d/promo/8/data/img3.jpg"
+							 height="150px"/>
+					</m:Panel>
+					<m:Panel class="sapUITinyMargin">
+					<m:VBox >
+
+						<m:Label text="Name: {name}"/>
+						<m:Label text="Surname: {surname}"/>
+						<m:Label text="Company: {surname}"/>
+						<m:Label text="Phone nubmer: {surname}"/>
+						<m:Button text="Edit"
+								press="onItemPressed"/>
+
+					</m:VBox>
+					</m:Panel>
+
+				</m:HBox>
+
+			</m:CustomListItem>
+
+
+		</m:List>
+
+	</m:Shell>
+
+
+</mvc:View>

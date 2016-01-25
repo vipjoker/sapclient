@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="sapM" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$USER_HOME$/Downloads/openui5-sdk-1.32.10/resources/sap" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/openui5-sdk-1.32.10/resources/sap" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

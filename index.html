@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>Feed</title>
+
+		<script id="sap-ui-bootstrap"
+			src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-xx-bindingSyntax="complex"
+			data-sap-ui-preload="async"
+			data-sap-ui-compatVersion="edge" 
+			data-sap-ui-resourceroots='{"controller" : "./controller",
+										"view" : "./view",
+										"root" : "./"}'>
+		</script>
+
+		<!-- Application launch configuration -->
+		<script>
+
+			sap.ui.getCore().attachInit(function() {
+			var app =	new sap.m.App ("mainContext",{
+					initialPage:"page1"
+				});
+				var page  = new sap.m.Page("page1",{
+						title: "Users",
+						enableScrolling : true
+					});
+
+				var userview = new sap.ui.xmlview({viewName : "view.V"});
+				page.addContent(userview);
+
+				app.addPage(page);
+
+
+
+
+
+
+				var page2 = new sap.ui.xmlview({viewName : "view.Page"});
+				app.addPage(page2);
+				app.placeAt("content");
+			});
+
+		</script>
+	</head>
+
+	<!-- UI Content -->
+	<body class="sapUiBody" id="content" role="application">
+	</body>
+
+</html>

@@ -1,0 +1,24 @@
+<mvc:View
+        id="page2"
+        height="100%"
+        controllerName="controller.Page"
+        xmlns:l="sap.ui.layout"
+        xmlns:f="sap.ui.layout"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns="sap.m">
+    <Page
+            id="page2"
+            showNavButton="true"
+            showHeader="true"
+            navButtonPress="onBackPressed">
+        <footer>
+            <Bar>
+                <contentRight>
+                    <Button id="edit" text="Edit" press="handleEditPress"/>
+                    <Button id="save" text="Save" type="Emphasized" visible="false" press="handleSavePress"/>
+                    <Button id="cancel" text="Cancel" visible="false" press="handleCancelPress"/>
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
